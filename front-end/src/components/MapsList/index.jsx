@@ -1,6 +1,9 @@
-import { List, BgImage, ButtonMap, BtnTitle, Container } from "./styles"
+import { List, BgImage, ButtonMap, BtnTitle, Container } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 export function MapsList() {
+  const { navigate } = useNavigation();
+  
   return (
     <List>
       <Container>
@@ -9,7 +12,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Mirage'})}>
             <BtnTitle>Mirage</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -19,7 +22,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Inferno'})}>
             <BtnTitle>Inferno</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -29,7 +32,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Overpass'})}>
             <BtnTitle>Overpass</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -39,7 +42,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Dust'})}>
             <BtnTitle>Dust II</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -49,7 +52,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Nuke'})}>
             <BtnTitle>Nuke</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -59,7 +62,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Ancient'})}>
             <BtnTitle>Ancient</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -69,7 +72,7 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Anubis'})}>
             <BtnTitle>Anubis</BtnTitle>
           </ButtonMap>
         </BgImage>
@@ -79,11 +82,11 @@ export function MapsList() {
           borderRadius={10}
           resizeMode="cover"
         >
-          <ButtonMap>
+          <ButtonMap onPress={() => navigate('Map', {selectedMap: 'Vertigo'})}>
             <BtnTitle>Vertigo</BtnTitle>
           </ButtonMap>
         </BgImage>
       </Container>
     </List>
-  )
-}
+  );
+};
