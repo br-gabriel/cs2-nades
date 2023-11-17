@@ -3,8 +3,9 @@ import styled from "styled-components/native";
 export const Header = styled.View`
   background-color: #26264E;
 
-  padding: 20px;
+  paddingHorizontal: 20px;
   paddingTop: 45px;
+  paddingBottom: 15px;
 
   flex-direction: row;
   align-items: center;
