@@ -3,6 +3,7 @@ import styled from "styled-components/native"
 export const List = styled.ScrollView`
   paddingVertical: 16px;
   width: 100%;
+  background-color: #26264E;
 `
 
 export const Container = styled.View`
@@ -24,7 +25,7 @@ export const BgImage = styled.ImageBackground`
 `
 
 export const ButtonMap = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.7
+  activeOpacity: 0.8
 })`
   width: 100%;
   height: 100%;

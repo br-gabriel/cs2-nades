@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 
 export const Header = styled.View`
-  background-color: royalblue;
+  background-color: #26264E;
 
   padding: 20px;
   paddingTop: 45px;

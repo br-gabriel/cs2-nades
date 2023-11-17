@@ -1,7 +1,7 @@
 import styled from "styled-components/native"
 
 export const Container = styled.View`
-  background-color: royalblue;
+  background-color: #26264E;
   color: #fff;
 
   width: 100%;
@@ -13,4 +13,5 @@ export const Title = styled.Text`
   color: #fff;
   font-size: 20px;
   text-align: left;
+  font-weight: bold;
 `
