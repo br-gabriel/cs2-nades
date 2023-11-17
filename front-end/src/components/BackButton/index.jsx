@@ -1,6 +1,6 @@
 import { Header, BackBtn, Title } from './styles';
 import { useNavigation } from '@react-navigation/native';
-import { Feather } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 export function BackButton({title}) {
   const { goBack } = useNavigation();
@@ -8,8 +8,8 @@ export function BackButton({title}) {
   return(
     <Header>
       <BackBtn onPress={goBack}>
-        <Feather 
-          name="arrow-left"
+        <Entypo 
+          name="chevron-small-left"
           size={30}
           color={"#fff"}
         />
