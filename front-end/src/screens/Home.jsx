@@ -5,7 +5,7 @@ import { MapsList } from '../components/MapsList/index';
 
 export function Home() {
   return (
-    <View>
+    <View style={{flex: 1, backgroundColor: '#26264E'}}>
       <StatusBar style="light" />
       <Header />
       <MapsList />
