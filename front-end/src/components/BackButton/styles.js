@@ -9,7 +9,7 @@ export const Header = styled.View`
 
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 `
 
 export const Title = styled.Text`
