@@ -1,10 +1,13 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { MyStack } from "./stack.routes";
+import FilterContextProvider from "../context/filterContext";
 
 export function Routes() {
   return (
-    <NavigationContainer>
-      <MyStack />
-    </NavigationContainer>
+    <FilterContextProvider>
+      <NavigationContainer>
+        <MyStack />
+      </NavigationContainer>
+    </FilterContextProvider>
   );
 };
