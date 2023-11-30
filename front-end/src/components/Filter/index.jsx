@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Text } from "react-native";
 import { Container, Title, SelectSide, TrSide, CtSide, SelectGrenade, RadioBtn, SelectContainer } from "./styles";
 import { FontAwesome } from '@expo/vector-icons';
+import { FilterContext } from "../../context/filterContext";
 
 export function Filter() {
-  const [side, setSide] = useState("TR");
-  const [type, setType] = useState("smoke");
-
+  const {side, setSide, type, setType} = useContext(FilterContext)
+  
   return (
     <Container>
       <Title>Side</Title>
