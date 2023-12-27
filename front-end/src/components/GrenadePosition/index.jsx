@@ -4,7 +4,7 @@ import Flash from "../../../assets/icons/flashbang.png";
 import Molotov from "../../../assets/icons/molotov.png";
 import Grenade from "../../../assets/icons/explosion.png";
 
-export function GrenadePosition({type, xAxis, yAxis}) {  
+export function GrenadePosition({type, xAxis, yAxis, onPress}) {  
   const selectIcon = (() => {
     switch(type) {
       case 'smoke':
@@ -21,7 +21,7 @@ export function GrenadePosition({type, xAxis, yAxis}) {
   })();
   
   return (
-    <Container x={xAxis} y={yAxis}>
+    <Container x={xAxis} y={yAxis} onPress={onPress}>
       <NadeIcon 
         source={selectIcon}
         resizeMode="contain"
